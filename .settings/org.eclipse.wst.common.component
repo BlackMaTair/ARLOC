@@ -1,12 +1,521 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="ARLOC">
+    <wb-module deploy-name="ARLOC-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
         <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
-        <dependent-module archiveName="ARLOCEJB.jar" deploy-path="/" handle="module:/resource/ARLOCEJB/ARLOCEJB">
-            <dependent-object/>
+        <dependent-module archiveName="ARLOCEJB-0.0.1-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/ARLOCEJB/ARLOCEJB">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="ARLOCWeb.war" deploy-path="/" handle="module:/resource/ARLOCWeb/ARLOCWeb">
-            <dependent-object/>
+        <dependent-module archiveName="bean-validator-2.4.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/external/bean-validator/2.4.0/bean-validator-2.4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cdi-api-1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.el-api-3.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation-api-1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-api-2.3.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="webservices-api-osgi-2.4.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/metro/webservices-api-osgi/2.4.1/webservices-api-osgi-2.4.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.xml.soap-api-1.4.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/xml/soap/javax.xml.soap-api/1.4.0/javax.xml.soap-api-1.4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="glassfish-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/glassfish-api/4.1.2/glassfish-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="scattered-archive-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/scattered-archive-api/4.1.2/scattered-archive-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2/2.4.0-b31/hk2-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-utils-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2-utils/2.4.0-b31/hk2-utils-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="config-types-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/config-types/2.4.0-b31/config-types-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-config-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2-config/2.4.0-b31/hk2-config-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tiger-types-1.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jvnet/tiger-types/1.4/tiger-types-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-runlevel-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2-runlevel/2.4.0-b31/hk2-runlevel-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="class-model-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/class-model/2.4.0-b31/class-model-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-all-repackaged-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/external/asm-all-repackaged/2.4.0-b31/asm-all-repackaged-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="nucleus-grizzly-all-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/grizzly/nucleus-grizzly-all/4.1.2/nucleus-grizzly-all-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grizzly-framework-2.3.23.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/grizzly/grizzly-framework/2.3.23/grizzly-framework-2.3.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grizzly-portunif-2.3.23.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/grizzly/grizzly-portunif/2.3.23/grizzly-portunif-2.3.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grizzly-http-2.3.23.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/grizzly/grizzly-http/2.3.23/grizzly-http-2.3.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grizzly-config-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/grizzly/grizzly-config/4.1.2/grizzly-config-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="management-api-3.2.1-b002.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/external/management-api/3.2.1-b002/management-api-3.2.1-b002.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ha-api-3.1.8.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/ha/ha-api/3.1.8/ha-api-3.1.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.batch-api-1.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/batch/javax.batch-api/1.0.1/javax.batch-api-1.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ejb-api-3.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/ejb/javax.ejb-api/3.2/javax.ejb-api-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.enterprise.concurrent-api-1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/enterprise/concurrent/javax.enterprise.concurrent-api/1.0/javax.enterprise.concurrent-api-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.enterprise.concurrent-1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/javax.enterprise.concurrent/1.1/javax.enterprise.concurrent-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.enterprise.deploy-api-1.6.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/enterprise/deploy/javax.enterprise.deploy-api/1.6/javax.enterprise.deploy-api-1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.faces-2.2.13.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/javax.faces/2.2.13/javax.faces-2.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-2.4.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/external/javax.inject/2.4.0/javax.inject-2.4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.interceptor-api-1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.jms-api-2.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.json-1.0.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.mail-1.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/mail/javax.mail/1.5.4/javax.mail-1.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="activation-1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/activation/activation/1.1/activation-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.management.j2ee-api-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/management/j2ee/javax.management.j2ee-api/1.1.1/javax.management.j2ee-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.persistence-2.1.0-RC2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/javax.persistence/2.1.0-RC2/javax.persistence-2.1.0-RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.resource-api-1.7.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/resource/javax.resource-api/1.7/javax.resource-api-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.security.auth.message-api-1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/security/auth/message/javax.security.auth.message-api/1.1/javax.security.auth.message-api-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.security.jacc-api-1.5.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/security/jacc/javax.security.jacc-api/1.5/javax.security.jacc-api-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet-api-3.1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jsp-api-2.3.2-b01.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jsp/javax.servlet.jsp-api/2.3.2-b01/javax.servlet.jsp-api-2.3.2-b01.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jsp-2.3.3-b02.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/web/javax.servlet.jsp/2.3.3-b02/javax.servlet.jsp-2.3.3-b02.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.el-3.0.1-b11-20180604.075333-1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/javax.el/3.0.1-b11-SNAPSHOT/javax.el-3.0.1-b11-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jsp.jstl-api-1.2.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jsp/jstl/javax.servlet.jsp.jstl-api/1.2.1/javax.servlet.jsp.jstl-api-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jsp.jstl-1.2.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/web/javax.servlet.jsp.jstl/1.2.4/javax.servlet.jsp.jstl-1.2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jstl-api-1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsp-api-2.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.transaction-api-1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.websocket-api-1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/websocket/javax.websocket-api/1.1/javax.websocket-api-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ws.rs-api-2.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.xml.registry-api-1.0.7.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/xml/registry/javax.xml.registry-api/1.0.7/javax.xml.registry-api-1.0.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.xml.rpc-api-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/xml/rpc/javax.xml.rpc-api/1.1.1/javax.xml.rpc-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-osgi-2.3.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-bean-validation-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/jersey-bean-validation/2.22.1/jersey-bean-validation-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-1.1.0.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-validator-5.1.3.Final.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-3.1.3.GA.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classmate-1.0.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.el-2.2.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-cdi1x-servlet-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/cdi/jersey-cdi1x-servlet/2.22.1/jersey-cdi1x-servlet-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-cdi1x-transaction-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/cdi/jersey-cdi1x-transaction/2.22.1/jersey-cdi1x-transaction-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-cdi1x-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/cdi/jersey-cdi1x/2.22.1/jersey-cdi1x-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/core/jersey-client/2.22.1/jersey-client-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-api-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2-api/2.4.0-b31/hk2-api-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-repackaged-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b31/aopalliance-repackaged-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-locator-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2-locator/2.4.0-b31/hk2-locator-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.18.1-GA.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-common-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/core/jersey-common/2.22.1/jersey-common-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="osgi-resource-locator-1.0.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-grizzly2-http-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.22.1/jersey-container-grizzly2-http-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grizzly-http-server-2.3.23.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/grizzly/grizzly-http-server/2.3.23/grizzly-http-server-2.3.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet-core-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.1/jersey-container-servlet-core-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/containers/jersey-container-servlet/2.22.1/jersey-container-servlet-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-entity-filtering-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/jersey-entity-filtering/2.22.1/jersey-entity-filtering-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-gf-ejb-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/containers/glassfish/jersey-gf-ejb/2.22.1/jersey-gf-ejb-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-guava-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.1/jersey-guava-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-jaxb-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-jaxb/2.22.1/jersey-media-jaxb-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-json-jackson-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-json-jackson/2.22.1/jersey-media-json-jackson-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-base-2.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.5.4/jackson-jaxrs-base-2.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-2.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-core/2.5.4/jackson-core-2.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.5.4/jackson-databind-2.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-json-provider-2.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.5.4/jackson-jaxrs-json-provider-2.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-module-jaxb-annotations-2.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.5.4/jackson-module-jaxb-annotations-2.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-annotations-2.5.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.5.4/jackson-annotations-2.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-json-jettison-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-json-jettison/2.22.1/jersey-media-json-jettison-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jettison-1.3.7.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-json-processing-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-json-processing/2.22.1/jersey-media-json-processing-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsonp-jaxrs-1.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jsonp-jaxrs/1.0/jsonp-jaxrs-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-moxy-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-moxy/2.22.1/jersey-media-moxy-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.persistence.moxy-2.6.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/org.eclipse.persistence.moxy/2.6.0/org.eclipse.persistence.moxy-2.6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.persistence.core-2.6.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/org.eclipse.persistence.core/2.6.0/org.eclipse.persistence.core-2.6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.persistence.asm-2.6.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/eclipse/persistence/org.eclipse.persistence.asm/2.6.0/org.eclipse.persistence.asm-2.6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-multipart-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-multipart/2.22.1/jersey-media-multipart-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mimepull-1.9.6.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jvnet/mimepull/mimepull/1.9.6/mimepull-1.9.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-sse-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/media/jersey-media-sse/2.22.1/jersey-media-sse-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-mvc-connector-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/jersey-mvc-connector/4.1.2/jersey-mvc-connector-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-core-2.4.0-b31.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/hk2/hk2-core/2.4.0-b31/hk2-core-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="common-util-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/common-util/4.1.2/common-util-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="war-util-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/war-util/4.1.2/war-util-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gf-web-connector-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/gf-web-connector/4.1.2/gf-web-connector-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-naming-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-naming/4.1.2/web-naming-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="glassfish-ee-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/glassfish-ee-api/4.1.2/glassfish-ee-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-mvc-jsp-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/jersey-mvc-jsp/2.22.1/jersey-mvc-jsp-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-mvc-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/ext/jersey-mvc/2.22.1/jersey-mvc-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="servlet-api-2.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-server-2.22.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/jersey/core/jersey-server/2.22.1/jersey-server-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="webservices-connector-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/webservices/webservices-connector/4.1.2/webservices-connector-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dol-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/deployment/dol/4.1.2/dol-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="annotation-framework-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/annotation-framework/4.1.2/annotation-framework-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="internal-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/internal-api/4.1.2/internal-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="config-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/admin/config-api/4.1.2/config-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-glue-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-glue/4.1.2/web-glue-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-cli-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-cli/4.1.2/web-cli-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="amx-javaee-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/amx-javaee/4.1.2/amx-javaee-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="amx-core-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/amx-core/4.1.2/amx-core-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="glassfish-mbeanserver-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/glassfish-mbeanserver/4.1.2/glassfish-mbeanserver-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jmxremote_optional-repackaged-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/external/jmxremote_optional-repackaged/4.1.2/jmxremote_optional-repackaged-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="flashlight-framework-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/flashlight/flashlight-framework/4.1.2/flashlight-framework-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stats77-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/stats77/4.1.2/stats77-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-core-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-core/4.1.2/web-core-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="admin-util-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/admin/admin-util/4.1.2/admin-util-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="deployment-javaee-core-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/deployment/deployment-javaee-core/4.1.2/deployment-javaee-core-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="admin-core-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/admin/admin-core/4.1.2/admin-core-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="monitoring-core-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/admin/monitoring-core/4.1.2/monitoring-core-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="transaction-internal-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/transaction/transaction-internal-api/4.1.2/transaction-internal-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="container-common-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/container-common/4.1.2/container-common-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="glassfish-naming-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/glassfish-naming/4.1.2/glassfish-naming-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-gui-plugin-common-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-gui-plugin-common/4.1.2/web-gui-plugin-common-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-embed-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-embed-api/4.1.2/web-embed-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="simple-glassfish-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/common/simple-glassfish-api/4.1.2/simple-glassfish-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-sse-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/web/web-sse/4.1.2/web-sse-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="webservices-extra-jdk-packages-2.4.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/metro/webservices-extra-jdk-packages/2.4.1/webservices-extra-jdk-packages-2.4.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="webservices-osgi-2.4.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/metro/webservices-osgi/2.4.1/webservices-osgi-2.4.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woodstox-core-asl-4.4.1.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax2-api-3.1.4.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlsec-1.5.8.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/apache/santuario/xmlsec/1.5.8/xmlsec-1.5.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.1.2/commons-logging-1.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="webservices.security-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/webservices.security/4.1.2/webservices.security-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="kernel-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/core/kernel/4.1.2/kernel-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="security-services-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/security-services/4.1.2/security-services-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gmbal-4.0.0-b001.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/gmbal/gmbal/4.0.0-b001/gmbal-4.0.0-b001.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pfl-basic-4.0.0-b003.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/pfl/pfl-basic/4.0.0-b003/pfl-basic-4.0.0-b003.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pfl-tf-4.0.0-b003.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/pfl/pfl-tf/4.0.0-b003/pfl-tf-4.0.0-b003.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pfl-asm-4.0.0-b003.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/pfl/pfl-asm/4.0.0-b003/pfl-asm-4.0.0-b003.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pfl-dynamic-4.0.0-b003.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/pfl/pfl-dynamic/4.0.0-b003/pfl-dynamic-4.0.0-b003.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pfl-basic-tools-4.0.0-b003.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/pfl/pfl-basic-tools/4.0.0-b003/pfl-basic-tools-4.0.0-b003.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pfl-tf-tools-4.0.0-b003.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/pfl/pfl-tf-tools/4.0.0-b003/pfl-tf-tools-4.0.0-b003.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="glassfish-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/core/glassfish/4.1.2/glassfish-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="logging-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/core/logging/4.1.2/logging-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="api-exporter-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/core/api-exporter/4.1.2/api-exporter-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="deployment-common-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/deployment/deployment-common/4.1.2/deployment-common-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-all-3.3.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/external/asm-all/3.3/asm-all-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="security-ee-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/security-ee/4.1.2/security-ee-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="security-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/security/4.1.2/security-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ldapbp-repackaged-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/external/ldapbp-repackaged/4.1.2/ldapbp-repackaged-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ssl-impl-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/ssl-impl/4.1.2/ssl-impl-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaspic.provider.framework-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/jaspic.provider.framework/4.1.2/jaspic.provider.framework-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejb-internal-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/ejb/ejb-internal-api/4.1.2/ejb-internal-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="connectors-internal-api-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/connectors/connectors-internal-api/4.1.2/connectors-internal-api-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resources-connector-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/resources/resources-connector/4.1.2/resources-connector-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="nucleus-resources-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/resourcebase/resources/nucleus-resources/4.1.2/nucleus-resources-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="libpam4j-repackaged-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/external/libpam4j-repackaged/4.1.2/libpam4j-repackaged-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="websecurity-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/security/websecurity/4.1.2/websecurity-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr109-impl-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/webservices/jsr109-impl/4.1.2/jsr109-impl-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gms-bootstrap-4.1.2.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/main/cluster/gms-bootstrap/4.1.2/gms-bootstrap-4.1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="shoal-gms-api-1.6.18.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/shoal/shoal-gms-api/1.6.18/shoal-gms-api-1.6.18.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="grizzly-http-servlet-2.3.23.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/glassfish/grizzly/grizzly-http-servlet/2.3.23/grizzly-http-servlet-2.3.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ARLOCWeb-0.0.1-SNAPSHOT.war" deploy-path="/" handle="module:/resource/ARLOCWeb/ARLOCWeb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>
